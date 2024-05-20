@@ -57,13 +57,19 @@ main {
   border: none;
   color: transparent;
   transition: all 0.3s;
+  border: 2px solid transparent;
+
 }
 
 .card button:hover {
   color: var(--Verylightgray-background);
-  border: 1px solid var(--Verylightgray-background);
+  border: 2px solid var(--Verylightgray-background);
   background: transparent;
   cursor: pointer;
+
+
+
+
 }
 
 .card1 button {
