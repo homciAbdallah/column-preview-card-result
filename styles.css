@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+:root {
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Brightorange: hsl(31, 77%, 52%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --ransparentwhite-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray-background: hsl(0, 0%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  color: var(--ransparentwhite-paragraphs);
+  font-family: "Big Shoulders Display", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 60%;
+  margin: auto;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card1 {
+  background: var(--Brightorange);
+  padding: 30px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.card2 {
+  background: var(--Darkcyan);
+  padding: 30px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card3 {
+  background: var(--Verydarkcyan);
+  padding: 30px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card button {
+  margin: 20px 0;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background: var(--ransparentwhite-paragraphs);
+  border: none;
+  color: transparent;
+  transition: all 0.3s;
+}
+
+.card button:hover {
+  color: var(--Verylightgray-background);
+  border: 1px solid var(--Verylightgray-background);
+  background: transparent;
+  cursor: pointer;
+}
+
+.card1 button {
+  color: var(--Brightorange);
+}
+
+.card2 button {
+  color: var(--Darkcyan);
+}
+
+.card3 button {
+  color: var(--Verydarkcyan);
+}
+
+.card p {
+  line-height: 1.5;
+  height: 40%;
+  margin: 20px 0 30px;
+}
+
+img {
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .card button {
+    margin: 5px 0;
+  }
+
+  .card p {
+    margin: 10px 0 50px;
+  }
+
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    grid-template-columns: auto;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .card button {
+    margin: 0;
+    padding: 5px 15px;
+    line-height: 1;
+  }
+
+  body {
+    padding: 10px 0;
+  }
+
+  img {
+    margin: 5px 0;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    padding: 10px 10px 30px 10px;
+  }
+}
